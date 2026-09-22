@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>HIGHZONE BIO & GARDEN | 하이존 통합 마스터 플랫폼</title>
+  <meta name="description" content="탄소나노 바이오 비료 6종, AI식물병원 닥터그린, 1인미디어 팜톡, 양평 3,471평 스마트팜 마을, 아바스포 천연공간방역 및 오픈이코노미 통합 플랫폼">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP HEADER (DESKTOP & MOBILE) -->
+  <header class="top-header">
+    <div class="header-brand" onclick="location.hash='#hub'; location.reload();">
+      <img src="assets/logo.png" alt="하이존바이오 로고" class="brand-logo" onerror="this.style.display='none'">
+      <div>
+        <div class="brand-title">HIGHZONE MASTER</div>
+        <div style="font-size:0.65rem; color:#94a3b8; letter-spacing:0.5px;">BIO • GARDEN • SMART FARM</div>
+      </div>
+      <span class="brand-badge">VERCEL LIVE</span>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="desktop-nav">
+      <button class="nav-link active" data-target="hub">통합 허브</button>
+      <button class="nav-link" data-target="bio">AI식물병원 & 스토어</button>
+      <button class="nav-link" data-target="farmtok">1인미디어 팜톡</button>
+      <button class="nav-link" data-target="smartfarm">양평 스마트팜</button>
+      <button class="nav-link" data-target="abaspo">ABASPO 방역</button>
+      <button class="nav-link" data-target="ir">IR 투자 & 토큰</button>
+    </nav>
+
+    <!-- HEADER ACTIONS -->
+    <div class="header-actions">
+      <button class="cart-btn" id="cartBtn">
+        🛒 <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <a href="tel:01082017763" class="btn-tel">
+        📞 <span>010-8201-7763</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- 1. HUB TAB (GRAND PORTAL) -->
+    <section id="hub" class="tab-content active">
+      <div class="hero-banner">
+        <span class="hero-tag">세계 최고 탄소나노 바이오 & 농업 오픈 이코노미</span>
+        <h1 class="hero-title">하이존 바이오 & 가든<br><span>5대 혁신 플랫폼</span> 통합 포털</h1>
+        <p class="hero-desc">
+          초격차 탄소나노 바이오 비료, AI 식물진단, 농가 1인 미디어 팜톡, 3,471평 양평 스마트팜 생태마을, 아바스포 천연 방역까지 완벽하게 하나로 연결되었습니다.
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="tel:01082017763" class="btn-tel" style="font-size:0.95rem; padding:10px 22px;">
+            📞 대표 직통 즉시 상담 (010-8201-7763)
+          </a>
+          <button class="card-btn" onclick="document.querySelector('[data-target=\'bio\']').click();">
+            🌿 AI 식물병원 진단받기
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-box">
+            <div class="stat-num">99.9%</div>
+            <div class="stat-label">아바스포 KTR 살균 검증</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">3,471평</div>
+            <div class="stat-label">양평 스마트팜 부지 확보</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">6종</div>
+            <div class="stat-label">탄소나노 바이오 비료</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num">30초</div>
+            <div class="stat-label">팜톡 미니홈피 개설 속도</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 CORE PILLARS CARDS -->
+      <div class="section-header">
+        <h2 class="section-title">하이존 5대 핵심 도메인</h2>
+        <span style="font-size:0.8rem; color:#94a3b8;">원클릭 하위페이지 즉시 이동</span>
+      </div>
+
+      <div class="grid-cards">
+        <!-- 1. AI 식물병원 & 6종 비료 -->
+        <div class="card">
+          <img src="assets/card_drgreen.jpg" alt="AI 식물병원" class="card-img" onerror="this.src='assets/products-lineup.png'">
+          <div class="card-body">
+            <span class="card-badge badge-green">생명과학 & 스토어</span>
+            <h3 class="card-title">AI 식물병원 닥터그린 & 6종 비료</h3>
+            <p class="card-text">탄소나노 바이오 기술로 작물의 광합성과 발근을 획기적으로 향상시키는 프리미엄 6종 라인업 및 AI 실시간 병충해 진단 솔루션.</p>
+            <button class="card-btn primary" onclick="document.querySelector('[data-target=\'bio\']').click();">
+              식물병원 & 스토어 입장하기 →
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. 1인 미디어 팜톡 -->
+        <div class="card">
+          <img src="assets/card_farmtok.jpg" alt="1인미디어 팜톡" class="card-img" onerror="this.src='assets/lifestyle_balcony.png'">
+          <div class="card-body">
+            <span class="card-badge badge-blue">농가 직거래 & 오픈이코노미</span>
+            <h3 class="card-title">1인 미디어 팜톡 (Farm-Tok)</h3>
+            <p class="card-text">스마트폰 하나로 30초 만에 개설하는 생산자 직거래 미니홈피! 수수료 없는 정직한 산지직송 오픈마켓 생태계를 지원합니다.</p>
+            <div style="display:flex; gap:8px;">
+              <button class="card-btn" style="flex:1;" onclick="document.querySelector('[data-target=\'farmtok\']').click();">
+                30초 개설 체험
+              </button>
+              <a href="/producer" class="card-btn primary" style="flex:1;">전용관 이동 →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. 양평 스마트팜 혁신마을 -->
+        <div class="card">
+          <img src="assets/card_yangpyeong.jpg" alt="양평 스마트팜" class="card-img" onerror="this.src='assets/lifestyle_smartfarm.png'">
+          <div class="card-body">
+            <span class="card-badge badge-amber">부동산 & 스마트팜 복합단지</span>
+            <h3 class="card-title">양평 3,471평 스마트팜 지상천국</h3>
+            <p class="card-text">첨단 유리온실, 아쿠아포닉스 힐링센터, 바이오팜 빌리지, 맨발 황토길이 공존하는 시니어 & 청년 상생 웰니스 혁신 커뮤니티.</p>
+            <div style="display:flex; gap:8px;">
+              <button class="card-btn" style="flex:1;" onclick="document.querySelector('[data-target=\'smartfarm\']').click();">
+                단지 개요 보기
+              </button>
+              <a href="/yangpyeong" class="card-btn primary" style="flex:1;">조감도 풀뷰 →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 아바스포 천연 공간소독 -->
+        <div class="card">
+          <img src="assets/card_abaspo.jpg" alt="아바스포 공간방역" class="card-img" onerror="this.src='assets/lifestyle_cafe.png'">
+          <div class="card-body">
+            <span class="card-badge badge-purple">딥테크 천연살균</span>
+            <h3 class="card-title">아바스포(ABASPO) 풀어주마 방역</h3>
+            <p class="card-text">화학 잔류물질 없는 100% 천연 가스상 공간소독 기술! KTR 공인 99.9% 멸균력으로 온실, 축사, 병원, 다중시설을 무결점으로 정화합니다.</p>
+            <div style="display:flex; gap:8px;">
+              <button class="card-btn" style="flex:1;" onclick="document.querySelector('[data-target=\'abaspo\']').click();">
+                성적서 보기
+              </button>
+              <a href="/abaspo" class="card-btn primary" style="flex:1;">딥테크관 이동 →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 글로벌 IR & 오픈 이코노미 -->
+        <div class="card">
+          <img src="assets/card_portal.jpg" alt="IR 투자관" class="card-img" onerror="this.src='assets/products-lineup.png'">
+          <div class="card-body">
+            <span class="card-badge badge-green">글로벌 투자 & HZP 토큰</span>
+            <h3 class="card-title">글로벌 IR 피치덱 & 오픈 이코노미</h3>
+            <p class="card-text">수익의 18.4%를 생태계 참여자에게 환원하는 HZP 프로토콜과 엔젤/시리즈A 투자자를 위한 완벽한 성장 로드맵.</p>
+            <div style="display:flex; gap:8px;">
+              <button class="card-btn" style="flex:1;" onclick="document.querySelector('[data-target=\'ir\']').click();">
+                배당 계산기
+              </button>
+              <a href="/invest" class="card-btn primary" style="flex:1;">피치덱 풀뷰 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BIO TAB (AI 식물병원 & 비료 스토어) -->
+    <section id="bio" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">🌿 AI 식물병원 닥터그린</h2>
+        <span style="font-size:0.8rem; color:#34d399;">실시간 AI 병충해 진단 엔진</span>
+      </div>
+
+      <div class="clinic-box">
+        <p style="color:#cbd5e1; margin-bottom:16px;">
+          재배 중인 작물과 현재 잎 상태의 증상을 선택하시면, 최적의 탄소나노 바이오 처방전과 배합 비율을 즉시 안내해 드립니다.
+        </p>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">진단 대상 작물</label>
+            <select class="form-select" id="clinicCrop">
+              <option value="토마토">완숙/방울 토마토</option>
+              <option value="딸기">설향/비타베리 딸기</option>
+              <option value="고추">청양/아삭이 고추</option>
+              <option value="엽채류">상추/케일/샐러드 채소</option>
+              <option value="과수">사과/배/포도 과수류</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">발생 증상</label>
+            <select class="form-select" id="clinicSymptom">
+              <option value="yellow">잎맥 사이가 노랗게 변함 (황화 현상)</option>
+              <option value="growth">초기 발근 불량 및 생육 지연</option>
+              <option value="pest">잎 표면 반점 및 흰가루병 의심</option>
+              <option value="calcium">잎 끝이 타들어가고 기형과 발생</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn-diagnose" id="btnDiagnose">AI 닥터그린 진단 시작</button>
+
+        <div class="diagnosis-result" id="clinicResult"></div>
+      </div>
+
+      <!-- 6 FERTILIZERS SHOP -->
+      <div class="section-header">
+        <h2 class="section-title">🧪 탄소나노 바이오 비료 6종 공식 스토어</h2>
+        <span style="font-size:0.8rem; color:#94a3b8;">원료 직수입 • 초격차 성능</span>
+      </div>
+
+      <div class="grid-cards">
+        <!-- Root -->
+        <div class="product-card">
+          <img src="assets/prod-root.png" alt="하이존 루트" class="product-thumb">
+          <h4 class="product-name">하이존 루트 (Root)</h4>
+          <p class="product-desc">강력한 뿌리 발근 및 초기 활착 촉진제 (500ml)</p>
+          <div class="product-price">35,000원</div>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="root">장바구니 담기 +</button>
+          </div>
+        </div>
+
+        <!-- Grow -->
+        <div class="product-card">
+          <img src="assets/prod-grow.png" alt="하이존 그로우" class="product-thumb">
+          <h4 class="product-name">하이존 그로우 (Grow)</h4>
+          <p class="product-desc">세포 분열 및 줄기/엽면 성장 극대화 (500ml)</p>
+          <div class="product-price">38,000원</div>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="grow">장바구니 담기 +</button>
+          </div>
+        </div>
+
+        <!-- Mineral -->
+        <div class="product-card">
+          <img src="assets/prod-mineral.png" alt="하이존 미네랄" class="product-thumb">
+          <h4 class="product-name">하이존 미네랄 (Mineral)</h4>
+          <p class="product-desc">광합성 효율 증대 및 미량요소 결핍 해소 (500ml)</p>
+          <div class="product-price">42,000원</div>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="mineral">장바구니 담기 +</button>
+          </div>
+        </div>
+
+        <!-- Shield -->
+        <div class="product-card">
+          <img src="assets/prod-shield.png" alt="하이존 쉴드" class="product-thumb">
+          <h4 class="product-name">하이존 쉴드 (Shield)</h4>
+          <p class="product-desc">병충해 침투 저항성 왁스층 강화 (500ml)</p>
+          <div class="product-price">45,000원</div>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="shield">장바구니 담기 +</button>
+          </div>
+        </div>
+
+        <!-- Color -->
+        <div class="product-card">
+          <img src="assets/prod-color.png" alt="하이존 칼라" class="product-thumb">
+          <h4 class="product-name">하이존 칼라 (Color)</h4>
+          <p class="product-desc">과실 착색 촉진, 당도 향상 및 저장성 증대 (500ml)</p>
+          <div class="product-price">40,000원</div>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="color">장바구니 담기 +</button>
+          </div>
+        </div>
+
+        <!-- Fifth -->
+        <div class="product-card">
+          <img src="assets/prod-fifth.png" alt="하이존 피프스" class="product-thumb">
+          <h4 class="product-name">하이존 피프스 (Fifth)</h4>
+          <p class="product-desc">토양 염류 집적 해소 및 지력 회복 영양제 (500ml)</p>
+          <div class="product-price">48,000원</div>
+          <div class="product-actions">
+            <button class="btn-add-cart" data-id="fifth">장바구니 담기 +</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FARM-TOK TAB -->
+    <section id="farmtok" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">📱 1인 미디어 팜톡 (Farm-Tok) 미니홈피</h2>
+        <span style="font-size:0.8rem; color:#60a5fa;">30초 완성 생산자 직거래 엔진</span>
+      </div>
+
+      <div class="farmtok-builder">
+        <!-- Input Form -->
+        <div style="background:var(--bg-card); padding:22px; border-radius:var(--radius-lg); border:1px solid var(--border-color);">
+          <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:14px; color:#34d399;">✍️ 내 농장 미니홈피 정보 입력</h3>
+          
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label">농장 이름</label>
+            <input type="text" class="form-input" id="ftFarmName" placeholder="예: 양평 햇살딸기 농원">
+          </div>
+
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label">생산자 대표 성함</label>
+            <input type="text" class="form-input" id="ftOwner" placeholder="예: 홍길동">
+          </div>
+
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label">주력 재배 작물</label>
+            <input type="text" class="form-input" id="ftCrop" placeholder="예: 설향 딸기, 친환경 상추">
+          </div>
+
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label">연락처</label>
+            <input type="text" class="form-input" id="ftPhone" placeholder="예: 010-1234-5678">
+          </div>
+
+          <div class="form-group" style="margin-bottom:18px;">
+            <label class="form-label">농장 소개 한 줄</label>
+            <input type="text" class="form-input" id="ftIntro" placeholder="예: 탄소나노 바이오로 당도 14브릭스 달성!">
+          </div>
+
+          <button class="btn-diagnose" id="btnCreateFarmtok">미니홈피 즉시 개설하기 ✨</button>
+        </div>
+
+        <!-- Live Preview Card -->
+        <div>
+          <h3 style="font-size:1.1rem; font-weight:800; margin-bottom:14px; color:#94a3b8;">👁️ 실시간 모바일 팜톡 미리보기</h3>
+          <div class="preview-card">
+            <span class="preview-badge">인증 농가</span>
+            <div style="display:flex; align-items:center; gap:14px; margin-bottom:16px;">
+              <div style="width:54px; height:54px; border-radius:50%; background:#10b981; display:flex; align-items:center; justify-content:center; font-size:1.6rem;">
+                👨‍🌾
+              </div>
+              <div>
+                <h4 id="pvTitle" style="font-size:1.25rem; font-weight:800; color:#fff;">햇살가득 스마트농장</h4>
+                <div id="pvOwner" style="font-size:0.85rem; color:#34d399; font-weight:700;">김대표 농부</div>
+              </div>
+            </div>
+
+            <div style="background:rgba(0,0,0,0.3); padding:12px; border-radius:8px; margin-bottom:14px;">
+              <div style="font-size:0.75rem; color:#94a3b8;">주요 재배 품목</div>
+              <div id="pvCrop" style="font-size:0.95rem; font-weight:700; color:#cbd5e1;">유기농 완숙 토마토</div>
+            </div>
+
+            <p id="pvIntro" style="font-size:0.88rem; color:#cbd5e1; line-height:1.5; margin-bottom:18px;">
+              탄소나노 바이오 농법으로 키운 정직한 프리미엄 농산물입니다.
+            </p>
+
+            <div style="display:flex; gap:8px;">
+              <button style="flex:1; background:#10b981; color:#064e3b; border:none; padding:10px; border-radius:6px; font-weight:800; font-size:0.85rem;">
+                산지직송 주문 📦
+              </button>
+              <button style="background:rgba(255,255,255,0.1); color:#fff; border:none; padding:10px 14px; border-radius:6px; font-size:0.85rem;">
+                공유하기 🔗
+              </button>
+            </div>
+          </div>
+
+          <div style="margin-top:16px; text-align:center;">
+            <a href="/producer" class="card-btn" style="display:inline-flex;">
+              생산자 전용 포털 전체보기 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. YANGPYEONG SMART FARM TAB -->
+    <section id="smartfarm" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">🏞️ 양평 3,471평 스마트팜 지상천국 혁신마을</h2>
+        <span style="font-size:0.8rem; color:#fbbf24;">웰니스 & 스마트팜 복합단지</span>
+      </div>
+
+      <div class="card" style="margin-bottom:24px;">
+        <img src="assets/card_yangpyeong.jpg" alt="양평 조감도" style="width:100%; height:320px; object-fit:cover;">
+        <div class="card-body">
+          <h3 style="font-size:1.35rem; font-weight:800; margin-bottom:8px;">양평군 용문면 천혜의 자연 속 스마트 농업 혁신지구</h3>
+          <p style="color:#cbd5e1; margin-bottom:18px; line-height:1.6;">
+            총 3,471평 규모 부지에 세워지는 대한민국 최초의 융복합 스마트팜 마을입니다. 청년 창농인과 시니어 은퇴자가 첨단 유리온실과 아쿠아포닉스를 통해 안정적인 농업 수익을 창출하고 천연 황토 힐링 인프라를 누립니다.
+          </p>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-bottom:18px;">
+            <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:8px;">
+              <div style="font-weight:700; color:#34d399;">1. 첨단 유리온실</div>
+              <div style="font-size:0.8rem; color:#94a3b8;">복합 환경제어 & 자동화 설비</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:8px;">
+              <div style="font-weight:700; color:#60a5fa;">2. 아쿠아포닉스</div>
+              <div style="font-size:0.8rem; color:#94a3b8;">물고기 양식과 수경재배 순환</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:8px;">
+              <div style="font-weight:700; color:#a78bfa;">3. 바이오팜 빌리지</div>
+              <div style="font-size:0.8rem; color:#94a3b8;">웰니스 주거 & 커뮤니티 센터</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.05); padding:12px; border-radius:8px;">
+              <div style="font-weight:700; color:#fbbf24;">4. 맨발 황토 힐링길</div>
+              <div style="font-size:0.8rem; color:#94a3b8;">어싱(Earthing) 치유 산책로</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="/yangpyeong" class="card-btn primary" style="flex:1;">
+              양평 지상천국 인터랙티브 조감도 보기 →
+            </a>
+            <a href="tel:01082017763" class="btn-tel">
+              📞 입주 및 부지 상담
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ABASPO TAB -->
+    <section id="abaspo" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">💨 아바스포(ABASPO) 풀어주마 천연 공간방역</h2>
+        <span style="font-size:0.8rem; color:#a78bfa;">KTR 공인 99.9% 멸균 성적</span>
+      </div>
+
+      <div class="clinic-box">
+        <h3 style="font-size:1.2rem; font-weight:800; margin-bottom:10px; color:#a78bfa;">화학 잔류가 남지 않는 100% 천연 가스상 공간살균</h3>
+        <p style="color:#cbd5e1; margin-bottom:18px;">
+          액체 분무 방식이 닿지 못하는 천장 모서리, 환기구, 배관 틈새까지 초미세 천연 기체 입자가 구석구석 침투하여 병원성 세균과 곰팡이를 99.9% 완전 사멸시킵니다.
+        </p>
+
+        <!-- KTR Certification Table -->
+        <div style="overflow-x:auto; margin-bottom:18px;">
+          <table style="width:100%; border-collapse:collapse; font-size:0.85rem; text-align:left;">
+            <thead>
+              <tr style="border-bottom:2px solid rgba(255,255,255,0.2); color:#a78bfa;">
+                <th style="padding:10px;">검사 균주</th>
+                <th style="padding:10px;">초기 농도 (CFU/ml)</th>
+                <th style="padding:10px;">처리 후 (CFU/ml)</th>
+                <th style="padding:10px;">살균 감소율</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+                <td style="padding:10px; font-weight:700;">폐렴간균 (K. pneumoniae)</td>
+                <td style="padding:10px;">1.8 × 10⁶</td>
+                <td style="padding:10px;">< 10</td>
+                <td style="padding:10px; color:#34d399; font-weight:800;">99.9% 사멸</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+                <td style="padding:10px; font-weight:700;">황색포도상구균 (S. aureus)</td>
+                <td style="padding:10px;">2.2 × 10⁶</td>
+                <td style="padding:10px;">< 10</td>
+                <td style="padding:10px; color:#34d399; font-weight:800;">99.9% 사멸</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+                <td style="padding:10px; font-weight:700;">대장균 (E. coli)</td>
+                <td style="padding:10px;">2.0 × 10⁶</td>
+                <td style="padding:10px;">< 10</td>
+                <td style="padding:10px; color:#34d399; font-weight:800;">99.9% 사멸</td>
+              </tr>
+              <tr>
+                <td style="padding:10px; font-weight:700;">녹농균 (P. aeruginosa)</td>
+                <td style="padding:10px;">1.9 × 10⁶</td>
+                <td style="padding:10px;">< 10</td>
+                <td style="padding:10px; color:#34d399; font-weight:800;">99.9% 사멸</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="/abaspo" class="card-btn primary" style="flex:1;">
+            아바스포 딥테크 전용관 이동 →
+          </a>
+          <a href="tel:01082017763" class="btn-tel">
+            📞 온실/축사 방역 출장 상담
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. IR & OPEN ECONOMY TAB -->
+    <section id="ir" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">📈 글로벌 IR 피치덱 & 오픈 이코노미</h2>
+        <span style="font-size:0.8rem; color:#34d399;">HZP 배당 시뮬레이터</span>
+      </div>
+
+      <div class="clinic-box">
+        <h3 style="font-size:1.2rem; font-weight:800; margin-bottom:8px; color:#34d399;">HZP 토큰 기반 선순환 배당 프로토콜</h3>
+        <p style="color:#cbd5e1; margin-bottom:18px;">
+          하이존 오픈 이코노미는 쇼핑몰 및 스마트팜 실물 수익의 18.4%를 투자자와 참여 농가에 매월 실시간 배당으로 지급합니다.
+        </p>
+
+        <!-- Staking Calculator -->
+        <div style="background:rgba(15,23,42,0.8); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:18px; margin-bottom:18px;">
+          <label class="form-label" style="margin-bottom:8px; display:block;">투자 또는 스테이킹 참여 금액 (원)</label>
+          <input type="number" class="form-input" id="hzpAmount" value="10000000" step="1000000" style="width:100%; margin-bottom:14px;">
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div style="background:rgba(0,0,0,0.3); padding:14px; border-radius:8px;">
+              <div style="font-size:0.78rem; color:#94a3b8;">예상 연간 배당 수익금</div>
+              <div id="hzpYield" style="font-size:1.25rem; font-weight:800; color:#34d399;">1,840,000 원 (연 18.4%)</div>
+            </div>
+            <div style="background:rgba(0,0,0,0.3); padding:14px; border-radius:8px;">
+              <div style="font-size:0.78rem; color:#94a3b8;">추가 HZP 거버넌스 토큰</div>
+              <div id="hzpReward" style="font-size:1.25rem; font-weight:800; color:#60a5fa;">10,000 HZP 토큰</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="/invest" class="card-btn primary" style="flex:1;">
+            글로벌 IR 피치덱 전문 보기 →
+          </a>
+          <a href="tel:01082017763" class="btn-tel">
+            📞 IR 담당 대표 직통 연결
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART MODAL -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="font-size:1.15rem; font-weight:800; color:#34d399;">🛒 장바구니 목록</h3>
+        <button class="modal-close" id="closeCartModal">✕</button>
+      </div>
+      <div id="cartList" style="margin-bottom:18px;"></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-top:2px solid rgba(255,255,255,0.1); margin-bottom:18px;">
+        <span style="font-weight:700; color:#94a3b8;">총 결제 예정 금액</span>
+        <span id="cartTotal" style="font-size:1.35rem; font-weight:800; color:#34d399;">0원</span>
+      </div>
+      <button class="btn-diagnose" id="checkoutBtn">
+        대표 직통 즉시 주문 및 전화상담 연결 📞
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE BOTTOM TAB BAR (APP NATIVE FEEL) -->
+  <nav class="bottom-nav">
+    <button class="bottom-tab active" data-target="hub">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>홈/허브</span>
+    </button>
+    <button class="bottom-tab" data-target="bio">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"></path><path d="M12 6v12"></path><path d="M8 10l4-4 4 4"></path></svg>
+      <span>식물병원</span>
+    </button>
+    <button class="bottom-tab" data-target="farmtok">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      <span>팜톡</span>
+    </button>
+    <button class="bottom-tab" data-target="smartfarm">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+      <span>스마트팜</span>
+    </button>
+    <button class="bottom-tab" data-target="abaspo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+      <span>방역/IR</span>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
