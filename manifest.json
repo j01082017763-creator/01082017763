@@ -1,0 +1,16 @@
+{
+  "name": "HIGHZONE BIO & GARDEN 통합 마스터 앱",
+  "short_name": "하이존 마스터",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090e17",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
